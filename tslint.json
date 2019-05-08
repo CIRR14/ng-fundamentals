@@ -3,6 +3,9 @@
   "rulesDirectory": [
     "codelyzer"
   ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+},
   "rules": {
     "array-type": false,
     "arrow-parens": false,
