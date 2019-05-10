@@ -1,5 +1,7 @@
 <div class="container">
-  <img [src]="event?.imageUrl" [alt]="event?.name" class="event-image">
+  <div class="row">
+    <img [src]="event?.imageUrl" [alt]="event?.name" class="event-image">
+  </div>
 
   <div class="row">
     <div class="col-md-11">
@@ -21,4 +23,10 @@
       </address>
     </div>
   </div>
+<br>
+<br>
+  <div class="row">
+      <button [routerLink]="['/events']" class="btn btn-primary"> Back </button>
+    </div>
+
 </div>
