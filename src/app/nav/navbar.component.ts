@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { EventService } from '../events/shared/event.service';
 import { ActivatedRoute } from '@angular/router';
+import { AuthService } from '../user/auth.service';
 
 @Component({
   selector: 'nav-bar',
@@ -16,7 +17,7 @@ import { ActivatedRoute } from '@angular/router';
 export class NavBarComponent {
   event: any;
   events: any[];
-  constructor( private eventService: EventService, private route: ActivatedRoute) {
+  constructor( private eventService: EventService, private route: ActivatedRoute, public auth: AuthService) {
 
   }
 
